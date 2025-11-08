@@ -1,3 +1,6 @@
+import warnings
+
+warnings.FutureWarning("ignore")
 from src.data_loader import load_sales_data
 from src.data_analysis import (
     add_revenue_column,
