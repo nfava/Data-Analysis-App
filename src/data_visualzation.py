@@ -41,3 +41,4 @@ def plot_regional_sales(region_df):
     plt.xticks(rotation=45)
     plt.tight_layout()
     plt.show()
+

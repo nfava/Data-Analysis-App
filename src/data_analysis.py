@@ -16,3 +16,6 @@ def top_products(df: pd.DataFrame, n=3) -> pd.DataFrame:
 
 def regional_sales(df: pd.DataFrame) -> pd.DataFrame:
     return df.groupby("Region")["Revenue"].sum().reset_index()
+
+def country_sales(df: pd.DataFrame) -> pd.DataFrame:
+    return df.groupby("Country")["Revenue"].sum().reset_index()
