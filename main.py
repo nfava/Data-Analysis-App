@@ -9,10 +9,10 @@ from src.data_analysis import (
     top_products,
     regional_sales
 )
-from src.data_visualzation import  (
+from src.data_visualzation import (
     plot_monthly_revenue,
     plot_top_products,
-    plot_regional_sales
+    plot_regional_sales, plot_order_shiptime
 )
 
 def main():
@@ -32,6 +32,6 @@ def main():
     plot_monthly_revenue(monthly_revenue(df))
     plot_top_products(top_products(df))
     plot_regional_sales(regional_sales(df))
-
+    plot_order_shiptime(df)
 if __name__ == "__main__":
     main()

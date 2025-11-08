@@ -42,3 +42,36 @@ def plot_regional_sales(region_df):
     plt.tight_layout()
     plt.show()
 
+def plot_order_shiptime(shiptime_df):
+    plt.figure(figsize=(8,5))
+    sns.barplot(
+        x="Order Date",
+        y="Ship Date",
+        data=shiptime_df,
+        palette="crest",
+        dodge=False,
+        hue=None,
+        legend=True
+    )
+    plt.title("Shipping time by Region")
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    plt.show()
+
+    def plot_country_sale(country_df):
+        plt.figure(figsize=(8, 5))
+        sns.barplot(
+            x="Country",
+            y="Ship Date",
+            data=shiptime_df,
+            palette="crest",
+            dodge=False,
+            hue=None,
+            legend=True
+        )
+        plt.title("Shipping time by Region")
+        plt.xticks(rotation=45)
+        plt.tight_layout()
+        plt.show()
+
+
