@@ -16,11 +16,8 @@ from src.data_visualzation import (
 )
 
 def main():
-    # Load data
     df = load_sales_data("data/100 Sales Records.csv")
     df = add_revenue_column(df)
-
-    # Print stats
     print("📊 Sales Summary Statistics:")
     print(get_summary_stats(df))
     print("\nTop Products by Revenue:")
@@ -28,7 +25,6 @@ def main():
     print("\nRegional Sales:")
     print(regional_sales(df))
 
-    # Generate plots
     plot_monthly_revenue(monthly_revenue(df))
     plot_top_products(top_products(df))
     plot_regional_sales(regional_sales(df))
