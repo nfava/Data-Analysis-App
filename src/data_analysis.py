@@ -21,6 +21,5 @@ def country_sales(df: pd.DataFrame) -> pd.DataFrame:
     return df.groupby("Country")["Revenue"].sum().reset_index()
 
 def order_shiptime(df: pd.DataFrame) -> pd.DataFrame:
-
     return df.groupby("Order Date")["Ship Date"].sum().reset_index()
 
