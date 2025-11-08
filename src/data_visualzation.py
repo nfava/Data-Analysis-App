@@ -18,8 +18,8 @@ def plot_top_products(top_df):
         data=top_df,
         palette="viridis",
         dodge=False,
-        hue=None,     # explicitly set hue to None
-        legend=False  # remove legend
+        hue=None,
+        legend=False
     )
     plt.title("Top Products by Revenue")
     plt.xticks(rotation=45)
